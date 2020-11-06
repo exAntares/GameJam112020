@@ -28,12 +28,12 @@ namespace HalfBlind.Timeline {
             return _initialRotation.Value.eulerAngles;
         }
 
-        public override Vector3 Evaluate(TweenRotateBehaviour tweenScaleBehaviour, Vector3 initial, float time, float duration) {
-            var t = EasingUtils.Evaluate(tweenScaleBehaviour.Easing, tweenScaleBehaviour.CustomCurve, time, duration);
-            var target = tweenScaleBehaviour.TargetRotation;
-            if (tweenScaleBehaviour.IsFrom) {
+        public override Vector3 Evaluate(TweenRotateBehaviour tween, Vector3 initial, float time, float duration) {
+            var t = EasingUtils.Evaluate(tween.Easing, tween.CustomCurve, time, duration);
+            var target = tween.TargetRotation;
+            if (tween.IsFrom) {
                 target = initial;
-                initial = tweenScaleBehaviour.TargetRotation;
+                initial = tween.TargetRotation;
             }
             return initial * (1 - t) + target * t;
         }

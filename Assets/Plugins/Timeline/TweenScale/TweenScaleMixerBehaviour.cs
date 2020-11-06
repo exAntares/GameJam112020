@@ -28,12 +28,12 @@ namespace HalfBlind.Timeline {
             return _initialScale.Value;
         }
 
-        public override Vector3 Evaluate(TweenScaleBehaviour tweenScaleBehaviour, Vector3 initial, float time, float duration) {
-            var t = EasingUtils.Evaluate(tweenScaleBehaviour.Easing, tweenScaleBehaviour.CustomCurve, time, duration);
-            var target = tweenScaleBehaviour.TargetScale;
-            if (tweenScaleBehaviour.IsFrom) {
+        public override Vector3 Evaluate(TweenScaleBehaviour tween, Vector3 initial, float time, float duration) {
+            var t = EasingUtils.Evaluate(tween.Easing, tween.CustomCurve, time, duration);
+            var target = tween.TargetScale;
+            if (tween.IsFrom) {
                 target = initial;
-                initial = tweenScaleBehaviour.TargetScale;
+                initial = tween.TargetScale;
             }
             return initial * (1 - t) + target * t;
         }

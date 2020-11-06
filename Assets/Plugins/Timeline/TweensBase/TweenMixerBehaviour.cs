@@ -41,6 +41,6 @@ namespace HalfBlind.Timeline {
 
         public abstract void SetValue(TResult lastKnown);
         public abstract TResult GetInitialValue();
-        public abstract TResult Evaluate(T tweenScaleBehaviour, TResult initial, float time, float duration);
+        public abstract TResult Evaluate(T tween, TResult initial, float time, float duration);
     }
 }
