@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "halfblind.attributes": "https://github.com/exAntares/halfblind.attributes.git#master",
+    "halfblind.saveutils": "https://github.com/exAntares/halfblind.saveutils.git#master",
+    "halfblind.scriptablevariables": "https://github.com/exAntares/halfblind.scriptablevariables.git#master",
     "com.unity.cinemachine": "2.6.3",
     "com.unity.ide.rider": "1.2.1",
     "com.unity.render-pipelines.universal": "8.2.0",

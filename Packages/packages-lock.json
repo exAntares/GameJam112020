@@ -104,6 +104,27 @@
       },
       "url": "https://packages.unity.com"
     },
+    "halfblind.attributes": {
+      "version": "https://github.com/exAntares/halfblind.attributes.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "1e4786e98eafaaf500cb029d05297b3ff5c93012"
+    },
+    "halfblind.saveutils": {
+      "version": "https://github.com/exAntares/halfblind.saveutils.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "bb76faf4671e0ca57346137afd4fa3784c48b033"
+    },
+    "halfblind.scriptablevariables": {
+      "version": "https://github.com/exAntares/halfblind.scriptablevariables.git#master",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "72b745249cbdb05d3bd25e6074d3a90f1921534a"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
