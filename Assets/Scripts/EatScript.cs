@@ -4,6 +4,7 @@ using UnityEngine;
 public class EatScript : MonoBehaviour {
     public Rigidbody MyRigidbody;
     public float EatProportion = 1.0f / 4.0f;
+    public float LosePiecesAngularVelocityMagnitud = 8.0f;
     
     private void OnCollisionEnter(Collision other) {
         var eatable = other.gameObject.GetComponent<Eatable>();
@@ -17,7 +18,7 @@ public class EatScript : MonoBehaviour {
                 other.rigidbody.isKinematic = true;
                 other.transform.SetParent(transform, true);                
             }
-            else if(MyRigidbody.angularVelocity.magnitude >= 4.0f) {
+            else if(MyRigidbody.angularVelocity.magnitude >= LosePiecesAngularVelocityMagnitud) {
                 Debug.Log($"Lost Pieces!");
                 LosePieces();
             }
