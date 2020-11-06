@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
+using GameJam;
 
 public class Eatable : MonoBehaviour {
     public Collider MyCollider;
@@ -9,7 +9,7 @@ public class Eatable : MonoBehaviour {
     
     public async void StartCooldown() {
         IsEatable = false;
-        await Task.Delay(2000);
+        await new WaitForSeconds(2).ToAwaitable(this);
         IsEatable = true;
     }
 }
