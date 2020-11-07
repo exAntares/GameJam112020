@@ -1342,7 +1342,7 @@ MonoBehaviour:
   m_TrackProperties:
     volume: 0.33527756
     stereoPan: 0
-    spatialBlend: 0
+    spatialBlend: 1
 --- !u!74 &-4278191010224419792
 AnimationClip:
   m_ObjectHideFlags: 0
@@ -1365,7 +1365,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.33527756
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1374,7 +1374,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.35
-        value: 0.21866018
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1423,7 +1423,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.33527756
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1432,7 +1432,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 0.35
-        value: 0.21866018
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136

@@ -20,14 +20,13 @@ public class EatScript : MonoBehaviour {
                 ChangeParentScale(myTransform, myTransform.localScale + eatable.GetSize);
                 other.collider.enabled = false;
                 other.rigidbody.isKinematic = true;
-                other.transform.SetParent(transform, true);     
+                other.transform.SetParent(transform, true);
+                _score.Value = myTransform.localScale.x;
             }
             else if(MyRigidbody.angularVelocity.magnitude >= LosePiecesAngularVelocityMagnitud) {
                 Debug.Log($"Lost Pieces!");
                 LosePieces();
             }
-
-            _score.Value = myTransform.localScale.x;
         }
     }
 
@@ -40,18 +39,21 @@ public class EatScript : MonoBehaviour {
             }
         }
 
-        var lostSize = Vector3.zero;
-        foreach (var eatable in lost) {
-            lostSize += eatable.GetSize;
-            eatable.transform.parent = null;
-            eatable.MyCollider.enabled = true;
-            eatable.MyRigidBody.isKinematic = false;
-            eatable.StartCooldown();
-        }
+        if (lost.Count > 0) {
+            var lostSize = Vector3.zero;
+            foreach (var eatable in lost) {
+                lostSize += eatable.GetSize;
+                eatable.transform.parent = null;
+                eatable.MyCollider.enabled = true;
+                eatable.MyRigidBody.isKinematic = false;
+                eatable.StartCooldown();
+            }
 
-        var myTransform = transform;
-        TotalAdded -= lostSize;
-        ChangeParentScale(myTransform, myTransform.localScale - lostSize);
+            var myTransform = transform;
+            TotalAdded -= lostSize;
+            ChangeParentScale(myTransform, myTransform.localScale - lostSize);
+            _score.Value = myTransform.localScale.x;
+        }
     }
 
     private void ChangeParentScale(Transform parent, Vector3 scale) {
