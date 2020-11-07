@@ -71,6 +71,7 @@ namespace Ludiq.Generated.Aot
 	// PlayerController.op_Implicit
 	// PlayerController.op_Inequality
 	// string.Concat
+	// string.Concat
 	// string.op_Equality
 	// string.op_Inequality
 	// UnityEngine.AI.NavMeshAgent.op_Equality
@@ -1403,6 +1404,17 @@ namespace Ludiq.Generated.Aot
 			string.Concat(arg0, arg1);
 			global::Ludiq.StaticFunctionInvoker<object, object, string> optimized = new global::Ludiq.StaticFunctionInvoker<object, object, string>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// string.Concat
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void string_Concat_0()
+		{
+			object arg0 = default(object);
+			string.Concat(arg0);
+			global::Ludiq.StaticFunctionInvoker<object, string> optimized = new global::Ludiq.StaticFunctionInvoker<object, string>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
 			optimized.Invoke(default(object[]));
 		}
 		
