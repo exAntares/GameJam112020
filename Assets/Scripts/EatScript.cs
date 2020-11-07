@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Bolt;
 using HalfBlind.ScriptableVariables;
 using UnityEngine;
 
@@ -22,6 +23,7 @@ public class EatScript : MonoBehaviour {
                 other.rigidbody.isKinematic = true;
                 other.transform.SetParent(transform, true);
                 _score.Value = myTransform.localScale.x;
+                CustomEvent.Trigger(other.gameObject, "EatEvent");
             }
             else if(MyRigidbody.angularVelocity.magnitude >= LosePiecesAngularVelocityMagnitud) {
                 Debug.Log($"Lost Pieces!");
