@@ -9,11 +9,11 @@ public class EatScript : MonoBehaviour {
     private void OnCollisionEnter(Collision other) {
         var eatable = other.gameObject.GetComponent<Eatable>();
         if (eatable) {
-            Debug.Log($"Hit {other.gameObject} with angularVelocity {MyRigidbody.angularVelocity.magnitude} {transform.localScale.x * EatProportion} vs {eatable.Size} ");
+            Debug.Log($"Hit {other.gameObject} with aV {MyRigidbody.angularVelocity.magnitude:F02} [{transform.localScale.x * EatProportion:F02}vs{eatable.Size}]");
             var myTransform = transform;
             var canEat = eatable.IsEatable && eatable.Size <= myTransform.localScale.x * EatProportion;
             if (canEat) {
-                ChangeParentScale(myTransform, myTransform.localScale + Vector3.one * eatable.Size);
+                ChangeParentScale(myTransform, myTransform.localScale + Vector3.one * (eatable.Size / 7));
                 other.collider.enabled = false;
                 other.rigidbody.isKinematic = true;
                 other.transform.SetParent(transform, true);                
@@ -29,14 +29,14 @@ public class EatScript : MonoBehaviour {
         var lost = new List<Eatable>();
         foreach (Transform child in transform) {
             var eatable = child.GetComponent<Eatable>();
-            if (eatable != null && Random.Range(0.0f,1.0f) <= 0.5f) {
+            if (eatable != null && Random.Range(0.0f, 1.0f) <= 0.5f) {
                 lost.Add(eatable);
             }
         }
 
         var lostSize = Vector3.zero;
         foreach (var eatable in lost) {
-            lostSize += Vector3.one * eatable.Size;
+            lostSize += Vector3.one * (eatable.Size / 7);
             eatable.transform.parent = null;
             eatable.MyCollider.enabled = true;
             eatable.MyRigidBody.isKinematic = false;

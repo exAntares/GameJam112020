@@ -256,7 +256,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MyRigidbody: {fileID: 240897350893904036}
   EatProportion: 0.5
-  LosePiecesAngularVelocityMagnitud: 8
+  LosePiecesAngularVelocityMagnitud: 5
 --- !u!135 &240897350893904034
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +280,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 1
-  m_AngularDrag: 0.05
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -337,7 +337,7 @@ MonoBehaviour:
   _virtualCamera: {fileID: 240897350348105838}
   _rigidbody: {fileID: 240897350893904036}
   _strength: 10
-  _forceMode: 2
+  _forceMode: 1
 --- !u!1 &6970029593951321757
 GameObject:
   m_ObjectHideFlags: 0
