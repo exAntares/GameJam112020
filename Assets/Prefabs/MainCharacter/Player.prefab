@@ -254,6 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dce03af35e9584107aa351e9c6a5bcf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _score: {fileID: 11400000, guid: 761b8501203ae41f49a2a41bff2249e9, type: 2}
   MyRigidbody: {fileID: 240897350893904036}
   EatProportion: 0.5
   LosePiecesAngularVelocityMagnitud: 5

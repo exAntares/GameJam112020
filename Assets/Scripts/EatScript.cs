@@ -1,10 +1,13 @@
 ﻿using System.Collections.Generic;
+using HalfBlind.ScriptableVariables;
 using UnityEngine;
 
 public class EatScript : MonoBehaviour {
+    [SerializeField] private GlobalFloat _score;
     public Rigidbody MyRigidbody;
     public float EatProportion = 1.0f / 4.0f;
     public float LosePiecesAngularVelocityMagnitud = 8.0f;
+    public Vector3 TotalAdded = Vector3.zero;
     
     private void OnCollisionEnter(Collision other) {
         var eatable = other.gameObject.GetComponent<Eatable>();
@@ -13,15 +16,18 @@ public class EatScript : MonoBehaviour {
             var myTransform = transform;
             var canEat = eatable.IsEatable && eatable.Size <= myTransform.localScale.x * EatProportion;
             if (canEat) {
-                ChangeParentScale(myTransform, myTransform.localScale + Vector3.one * (eatable.Size / 7));
+                TotalAdded += eatable.GetSize;
+                ChangeParentScale(myTransform, myTransform.localScale + eatable.GetSize);
                 other.collider.enabled = false;
                 other.rigidbody.isKinematic = true;
-                other.transform.SetParent(transform, true);                
+                other.transform.SetParent(transform, true);     
             }
             else if(MyRigidbody.angularVelocity.magnitude >= LosePiecesAngularVelocityMagnitud) {
                 Debug.Log($"Lost Pieces!");
                 LosePieces();
             }
+
+            _score.Value = myTransform.localScale.x;
         }
     }
 
@@ -36,7 +42,7 @@ public class EatScript : MonoBehaviour {
 
         var lostSize = Vector3.zero;
         foreach (var eatable in lost) {
-            lostSize += Vector3.one * (eatable.Size / 7);
+            lostSize += eatable.GetSize;
             eatable.transform.parent = null;
             eatable.MyCollider.enabled = true;
             eatable.MyRigidBody.isKinematic = false;
@@ -44,6 +50,7 @@ public class EatScript : MonoBehaviour {
         }
 
         var myTransform = transform;
+        TotalAdded -= lostSize;
         ChangeParentScale(myTransform, myTransform.localScale - lostSize);
     }
 

@@ -7,6 +7,8 @@ public class Eatable : MonoBehaviour {
     public float Size = 0.2f;
     public bool IsEatable { get; private set; } = true;
 
+    public Vector3 GetSize => Vector3.one * (Size / 7); 
+
     private void Reset() {
         MyCollider = GetComponent<Collider>();
         MyRigidBody = GetComponent<Rigidbody>();
