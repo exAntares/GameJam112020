@@ -2,6 +2,7 @@
 using Bolt;
 using HalfBlind.ScriptableVariables;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EatScript : MonoBehaviour {
     [SerializeField] private GlobalFloat _score;
@@ -9,14 +10,17 @@ public class EatScript : MonoBehaviour {
     public float EatProportion = 1.0f / 4.0f;
     public float LosePiecesAngularVelocityMagnitud = 8.0f;
     public Vector3 TotalAdded = Vector3.zero;
+
+    public bool CanEat(Eatable eatable) {
+        return eatable.IsEatable && eatable.Size <= transform.localScale.x * EatProportion;
+    }
     
     private void OnCollisionEnter(Collision other) {
         var eatable = other.gameObject.GetComponent<Eatable>();
         if (eatable) {
             Debug.Log($"Hit {other.gameObject} with aV {MyRigidbody.angularVelocity.magnitude:F02} [{transform.localScale.x * EatProportion:F02}vs{eatable.Size}]");
             var myTransform = transform;
-            var canEat = eatable.IsEatable && eatable.Size <= myTransform.localScale.x * EatProportion;
-            if (canEat) {
+            if (CanEat(eatable)) {
                 TotalAdded += eatable.GetSize;
                 ChangeParentScale(myTransform, myTransform.localScale + eatable.GetSize);
                 other.collider.enabled = false;

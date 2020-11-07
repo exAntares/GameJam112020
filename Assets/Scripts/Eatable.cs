@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using GameJam;
 
 public class Eatable : MonoBehaviour {
@@ -8,10 +9,28 @@ public class Eatable : MonoBehaviour {
     public bool IsEatable { get; private set; } = true;
 
     public Vector3 GetSize => Vector3.one * (Size / 7); 
+    private MeshRenderer _renderer;
+    private EatScript _eatScript;
 
     private void Reset() {
         MyCollider = GetComponent<Collider>();
         MyRigidBody = GetComponent<Rigidbody>();
+    }
+
+    private void Awake() {
+        _renderer = GetComponent<MeshRenderer>();
+        _eatScript = FindObjectOfType<EatScript>();
+    }
+
+    private void Update() {
+        if (_eatScript.CanEat(this) && _renderer) {
+            if (MyCollider.enabled) {
+                _renderer.material.SetFloat("Eatable", 1);
+            }
+            else {
+                _renderer.material.SetFloat("Eatable", 0);
+            }
+        }
     }
 
     public async void StartCooldown() {
