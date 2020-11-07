@@ -40,6 +40,9 @@ namespace Ludiq.Generated.Aot
 	// float.op_Inequality
 	// float.op_LessThan
 	// float.op_LessThanOrEqual
+	// Follower.op_Equality
+	// Follower.op_Implicit
+	// Follower.op_Inequality
 	// HalfBlind.ScriptableVariables.GlobalFloatToBolt.op_Equality
 	// HalfBlind.ScriptableVariables.GlobalFloatToBolt.op_Implicit
 	// HalfBlind.ScriptableVariables.GlobalFloatToBolt.op_Inequality
@@ -1041,6 +1044,41 @@ namespace Ludiq.Generated.Aot
 			float arg1 = default(float);
 			bool @operator = (arg0 <= arg1);
 			global::Ludiq.StaticFunctionInvoker<float, float, bool> optimized = new global::Ludiq.StaticFunctionInvoker<float, float, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// Follower.op_Equality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void Follower_op_Equality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 == arg1);
+			global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// Follower.op_Implicit
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void Follower_op_Implicit()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			bool conversion = ((bool)(arg0));
+			global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, bool> optimized = new global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// Follower.op_Inequality
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void Follower_op_Inequality()
+		{
+			global::UnityEngine.Object arg0 = default(global::UnityEngine.Object);
+			global::UnityEngine.Object arg1 = default(global::UnityEngine.Object);
+			bool @operator = (arg0 != arg1);
+			global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(null, arg0, arg1);
 			optimized.Invoke(default(object[]));
 		}
