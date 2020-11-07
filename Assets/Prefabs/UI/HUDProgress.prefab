@@ -32,10 +32,10 @@ RectTransform:
   m_Father: {fileID: 8265860206583509518}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.846, y: 0.7882609}
-  m_AnchorMax: {x: 0.94500005, y: 0.94752175}
-  m_AnchoredPosition: {x: -40.0355, y: -33.689632}
-  m_SizeDelta: {x: 91.20601, y: 76.99069}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7153038137796530719
 CanvasRenderer:
@@ -359,6 +359,7 @@ GameObject:
   - component: {fileID: 616997031}
   - component: {fileID: 616997032}
   - component: {fileID: 616997029}
+  - component: {fileID: 46263125}
   m_Layer: 5
   m_Name: HUDProgress
   m_TagString: Untagged
@@ -455,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":10.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5947764728783006343}
     - {fileID: 4202096426167764931}
@@ -479,9 +480,20 @@ PlayableDirector:
     value: {fileID: 8265860206583509518}
   - key: {fileID: -8995866307379743056, guid: adf6036a3bfd84042946e5c5305881fb, type: 2}
     value: {fileID: 1693216292161397253}
-  - key: {fileID: 887334843110881383, guid: adf6036a3bfd84042946e5c5305881fb, type: 2}
-    value: {fileID: 0}
   - key: {fileID: -4558350916326904042, guid: adf6036a3bfd84042946e5c5305881fb, type: 2}
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
+--- !u!114 &46263125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779208308470627392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc849726534dd4508b4bfc7b62426ec2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _float: {fileID: 11400000, guid: 761b8501203ae41f49a2a41bff2249e9, type: 2}

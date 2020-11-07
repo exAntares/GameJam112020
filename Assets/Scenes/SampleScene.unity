@@ -559,6 +559,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 378625811}
     m_Modifications:
+    - target: {fileID: 1693216292161397253, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693216292161397253, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1693216292161397253, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6779208308470627392, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
       propertyPath: m_Name
       value: HUDProgress
@@ -598,6 +610,18 @@ PrefabInstance:
     - target: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
       propertyPath: m_LocalPosition.x
