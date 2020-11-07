@@ -23,16 +23,17 @@ public class Eatable : MonoBehaviour {
     // Draws a wireframe sphere in the Scene view, fully enclosing
     // the object.
     void OnDrawGizmosSelected() {
-        // A sphere that fully encloses the bounding box.
         var component = GetComponent<Renderer>();
-        var componentBounds = component.bounds;
-        Vector3 center = componentBounds.center;
-        var boundsExtents = componentBounds.extents;
-        Size = Mathf.Max(boundsExtents.x, boundsExtents.y, boundsExtents.z);
+        if (component) {
+            var componentBounds = component.bounds;
+            Vector3 center = componentBounds.center;
+            var boundsExtents = componentBounds.extents;
+            Size = Mathf.Max(boundsExtents.x, boundsExtents.y, boundsExtents.z);
 
-        Gizmos.color = Color.white;
-        Gizmos.DrawWireSphere(center, Size);
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(center, boundsExtents);
+            Gizmos.color = Color.white;
+            Gizmos.DrawWireSphere(center, Size);
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(center, boundsExtents);
+        }
     }
 }
