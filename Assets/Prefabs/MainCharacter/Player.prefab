@@ -257,7 +257,8 @@ MonoBehaviour:
   _score: {fileID: 11400000, guid: 761b8501203ae41f49a2a41bff2249e9, type: 2}
   MyRigidbody: {fileID: 240897350893904036}
   EatProportion: 0.5
-  LosePiecesAngularVelocityMagnitud: 5
+  LosePiecesAngularVelocityMagnitud: 8
+  TotalAdded: {x: 0, y: 0, z: 0}
 --- !u!135 &240897350893904034
 SphereCollider:
   m_ObjectHideFlags: 0
