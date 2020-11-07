@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private float _strength = 1.0f;
     [SerializeField] private ForceMode _forceMode = ForceMode.Force;
+    [SerializeField] private float _cameraDistanceFactor = 5.0f;
     
     private Vector3 _lastPosition;
     private Cinemachine3rdPersonFollow _thirdPersonFollow;
@@ -31,13 +32,13 @@ public class PlayerController : MonoBehaviour {
             _rigidbody.AddForce(forward + right, _forceMode);
         }
 
-        _thirdPersonFollow.CameraDistance = _sphere.transform.localScale.x * 2.0f;
+        _thirdPersonFollow.CameraDistance = _sphere.transform.localScale.x * _cameraDistanceFactor;
         var spherePosition = _sphere.position;
-        _lastPosition = spherePosition;
         var direction = spherePosition - _lastPosition;
         var targetPosition = spherePosition + direction;
         targetPosition.y = _follower.position.y;
         _follower.LookAt(targetPosition);
         _follower.position = spherePosition;
+        _lastPosition = spherePosition;
     }
 }
