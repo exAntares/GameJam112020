@@ -128,6 +128,101 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8265860206583509518, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
   m_PrefabInstance: {fileID: 1402243806}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &54873780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54873781}
+  m_Layer: 0
+  m_Name: Crows
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &54873781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54873780}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.35, y: 0, z: -4.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1251149565}
+  - {fileID: 67039392}
+  - {fileID: 748271095}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &67039391
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 54873781}
+    m_Modifications:
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 5.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.44619766
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8949345
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 233
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450003, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_Name
+      value: CrowEatable (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+--- !u!4 &67039392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+  m_PrefabInstance: {fileID: 67039391}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &202594673
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +461,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &748271094
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 54873781}
+    m_Modifications:
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.85437304
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5196602
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 62.619
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450003, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_Name
+      value: CrowEatable (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+--- !u!4 &748271095 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+  m_PrefabInstance: {fileID: 748271094}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806310483
 GameObject:
   m_ObjectHideFlags: 0
@@ -814,6 +971,68 @@ PlayableDirector:
 Light:
   m_CorrespondingSourceObject: {fileID: 4379110118376748157, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
   m_PrefabInstance: {fileID: 1168148933}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1251149564
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 54873781}
+    m_Modifications:
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 196686634166450003, guid: 39e75946f83859741a1145da933e914c, type: 3}
+      propertyPath: m_Name
+      value: CrowEatable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+--- !u!4 &1251149565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 196686634166450000, guid: 39e75946f83859741a1145da933e914c, type: 3}
+  m_PrefabInstance: {fileID: 1251149564}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1402243806
 PrefabInstance:
