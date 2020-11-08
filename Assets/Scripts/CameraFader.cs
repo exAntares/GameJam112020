@@ -21,7 +21,7 @@ public class CameraFader : MonoBehaviour {
                     _disolveValueByMaterial[meshRenderer.material] = Time.realtimeSinceStartup + _disolveDuration;
                 }
                 else if(GetRemainingTime(value) <= 0) {
-                    _disolveValueByMaterial[meshRenderer.material] = Time.realtimeSinceStartup + 0.5f;
+                    _disolveValueByMaterial[meshRenderer.material] = Time.realtimeSinceStartup + 0.05f;
                 }
             }
         }
