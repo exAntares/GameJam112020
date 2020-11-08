@@ -1036,6 +1036,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
       objectReference: {fileID: 60394545}
+    - target: {fileID: 1929820440921554395, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].value
+      value: 
+      objectReference: {fileID: 60394547}
+    - target: {fileID: 1929820440921554395, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].value
+      value: 
+      objectReference: {fileID: 60394546}
     - target: {fileID: 2769519779579805569, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.37228715
@@ -1909,6 +1917,16 @@ PrefabInstance:
 --- !u!95 &60394545 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2769519779589083143, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+  m_PrefabInstance: {fileID: 60394544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &60394546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2769519779579805595, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+  m_PrefabInstance: {fileID: 60394544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &60394547 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6194708948913930971, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
   m_PrefabInstance: {fileID: 60394544}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &290367266
@@ -5335,6 +5353,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[4].value
       value: 
       objectReference: {fileID: 1681736167}
+    - target: {fileID: 1929820440921554395, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+      propertyPath: m_SceneBindings.Array.data[5].value
+      value: 
+      objectReference: {fileID: 1681736169}
+    - target: {fileID: 1929820440921554395, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+      propertyPath: m_SceneBindings.Array.data[6].value
+      value: 
+      objectReference: {fileID: 1681736168}
     - target: {fileID: 2769519779579805569, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.37228715
@@ -6208,6 +6234,16 @@ PrefabInstance:
 --- !u!95 &1681736167 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2769519779589083143, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+  m_PrefabInstance: {fileID: 1681736166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1681736168 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2769519779579805595, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
+  m_PrefabInstance: {fileID: 1681736166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1681736169 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6194708948913930971, guid: 5d6f152b9ff593047af9d17a1193cbaf, type: 3}
   m_PrefabInstance: {fileID: 1681736166}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1975094324
