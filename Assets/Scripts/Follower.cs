@@ -4,22 +4,21 @@ using UnityEngine;
 public class Follower : MonoBehaviour {
     [SerializeField] private Transform _sphere;
     [SerializeField] private Transform _follower;
-    [SerializeField] private CinemachineVirtualCamera _virtualCamera;
+    [SerializeField] private CinemachineFreeLook _virtualCamera;
     
     [SerializeField] private float _cameraDistanceFactor = 5.0f;
     
     private Vector3 _lastPosition;
     private Cinemachine3rdPersonFollow _thirdPersonFollow;
 
-    private void Awake() {
-        CinemachineComponentBase componentBase = _virtualCamera.GetCinemachineComponent(CinemachineCore.Stage.Body);
-        if (componentBase is Cinemachine3rdPersonFollow) {
-            _thirdPersonFollow = componentBase as Cinemachine3rdPersonFollow;
-        }
-    }
-
     private void Update() {
-        _thirdPersonFollow.CameraDistance = _sphere.transform.localScale.x * _cameraDistanceFactor;
+        var sphereScaleX = _sphere.transform.localScale.x;
+        var radius = 10 + sphereScaleX * _cameraDistanceFactor;
+        _virtualCamera.m_Orbits[1].m_Height = radius * 0.5f;
+        _virtualCamera.m_Orbits[0].m_Height = radius;
+        _virtualCamera.m_Orbits[0].m_Radius = radius;
+        _virtualCamera.m_Orbits[1].m_Radius = radius;
+        _virtualCamera.m_Orbits[2].m_Radius = radius;
         var spherePosition = _sphere.position;
         var direction = spherePosition - _lastPosition;
         var targetPosition = spherePosition + direction;

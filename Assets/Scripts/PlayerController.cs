@@ -1,18 +1,18 @@
-﻿using Cinemachine;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-    [SerializeField] private CinemachineVirtualCamera _virtualCamera;
+    [SerializeField] private Transform _camera;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private float _strength = 1.0f;
     [SerializeField] private ForceMode _forceMode = ForceMode.Force;
     
     private Vector3 _lastPosition;
-    private Transform _virtualCameraTransform;
 
     private void Awake() {
-        _virtualCameraTransform = _virtualCamera.transform;
+        if (_camera == null) {
+            _camera = FindObjectOfType<Camera>().transform;
+        }
     }
 
     private void OnEnable() {
@@ -27,8 +27,8 @@ public class PlayerController : MonoBehaviour {
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
         if (horizontal != 0 || vertical > 0) {
-            var right = _virtualCameraTransform.right * (horizontal * _strength * Time.deltaTime);
-            var forward = _virtualCameraTransform.forward * (vertical * _strength * Time.deltaTime);
+            var right = _camera.right * (horizontal * _strength * Time.deltaTime);
+            var forward = _camera.forward * (vertical * _strength * Time.deltaTime);
             _rigidbody.AddForce(forward + right, _forceMode);
             if (!_audioSource.isPlaying) {
                 _audioSource.Play();
