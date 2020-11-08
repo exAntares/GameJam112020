@@ -2789,7 +2789,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     IsFrom: 0
     IsRelative: 1
-    TargetValue: {x: 0, y: 0, z: 0}
+    TargetValue: {x: 0, y: 0.2, z: 0}
 --- !u!114 &-7540723781912843964
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8921,7 +8921,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     IsFrom: 0
     IsRelative: 1
-    TargetValue: {x: 0, y: 0, z: 0}
+    TargetValue: {x: 0, y: 0.2, z: 0}
 --- !u!114 &-107212179887644047
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9851,7 +9851,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     IsFrom: 0
     IsRelative: 1
-    TargetValue: {x: 0, y: 0, z: 0}
+    TargetValue: {x: 0, y: 0.2, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13020,7 +13020,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     IsFrom: 0
     IsRelative: 1
-    TargetValue: {x: 0, y: 0, z: 0}
+    TargetValue: {x: 0, y: 0.2, z: 0}
 --- !u!114 &4289196981946125029
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16307,7 +16307,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     IsFrom: 0
     IsRelative: 1
-    TargetValue: {x: 0, y: 0, z: 0}
+    TargetValue: {x: 0, y: 0.2, z: 0}
 --- !u!114 &6771475283197785133
 MonoBehaviour:
   m_ObjectHideFlags: 1
