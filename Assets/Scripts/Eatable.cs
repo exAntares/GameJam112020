@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using GameJam;
 
 public class Eatable : MonoBehaviour {

@@ -24,7 +24,9 @@ public class EatScript : MonoBehaviour {
                 TotalAdded += eatable.GetSize;
                 ChangeParentScale(myTransform, myTransform.localScale + eatable.GetSize);
                 other.collider.enabled = false;
-                other.rigidbody.isKinematic = true;
+                if (eatable.MyRigidBody) {
+                    other.rigidbody.isKinematic = true;
+                }
                 other.transform.SetParent(transform, true);
                 _score.Value = myTransform.localScale.x;
                 CustomEvent.Trigger(other.gameObject, "EatEvent");
@@ -51,7 +53,9 @@ public class EatScript : MonoBehaviour {
                 lostSize += eatable.GetSize;
                 eatable.transform.parent = null;
                 eatable.MyCollider.enabled = true;
-                eatable.MyRigidBody.isKinematic = false;
+                if (eatable.MyRigidBody) {
+                    eatable.MyRigidBody.isKinematic = false;
+                }
                 eatable.StartCooldown();
             }
 
