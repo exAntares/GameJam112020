@@ -657,6 +657,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f43579329c7f640429343c53ab8e17a8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 367c9db1504de47cc826eba2fb22438f, type: 2}
     - target: {fileID: 919132149155446097, guid: f43579329c7f640429343c53ab8e17a8, type: 3}
       propertyPath: m_Name
       value: ladybug_black
