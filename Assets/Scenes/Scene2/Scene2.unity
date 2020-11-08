@@ -1043,7 +1043,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 616997032, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
       propertyPath: _data._json
-      value: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":25.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EndCutsceneHolder","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      value: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":15.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EndCutsceneHolder","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 616997032, guid: 456f30c9b8a5a1146b80a4e4d037a770, type: 3}
       propertyPath: _data._objectReferences.Array.size
