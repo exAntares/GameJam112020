@@ -456,11 +456,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _json: '{"declarations":{"collection":{"$content":[{"name":"FinalMilestone","value":{"$content":6.0,"$type":"System.Single"},"$version":"A"},{"name":"CurrentWeight","value":{"$content":0.0,"$type":"System.Single"},"$version":"A"},{"name":"ContentImage","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent01","value":{"$content":1,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"TextComponent02","value":{"$content":2,"$type":"UnityEngine.Object"},"$version":"A"},{"name":"EndCutsceneHolder","value":{"$content":3,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 5947764728783006343}
     - {fileID: 4202096426167764931}
     - {fileID: 3194003236094442927}
+    - {fileID: 0}
 --- !u!320 &616997029
 PlayableDirector:
   m_ObjectHideFlags: 0
