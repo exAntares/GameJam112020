@@ -755,7 +755,7 @@ PrefabInstance:
       objectReference: {fileID: 1498510808}
     - target: {fileID: 186994583804374636, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.6000657
+      value: -3.6002145
       objectReference: {fileID: 0}
     - target: {fileID: 186994583804374636, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_LocalPosition.y
@@ -793,6 +793,14 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[10].value
       value: 
       objectReference: {fileID: 2058605423}
+    - target: {fileID: 1321735260260330870, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1321735260260330870, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2118039773932968981, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.2099986
@@ -822,6 +830,14 @@ PrefabInstance:
       value: 0.10304284
       objectReference: {fileID: 0}
     - target: {fileID: 5171921673087066167, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_SceneBindings.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171921673087066167, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_SceneBindings.Array.data[19].key
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5171921673087066167, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_SceneBindings.Array.data[8].value
       value: 
       objectReference: {fileID: 1498510808}
@@ -833,6 +849,10 @@ PrefabInstance:
       propertyPath: m_SceneBindings.Array.data[10].value
       value: 
       objectReference: {fileID: 2058605423}
+    - target: {fileID: 5171921673087066167, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_SceneBindings.Array.data[19].value
+      value: 
+      objectReference: {fileID: 1786840608}
     - target: {fileID: 5171921674460914256, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_Name
       value: CutsceneFinal
@@ -880,6 +900,14 @@ PrefabInstance:
     - target: {fileID: 5171921674460914259, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379608187795306925, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6379608187795306925, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7525ab7112da7a94599fd57112592e04, type: 3}
@@ -1951,6 +1979,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1786840608 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3950575328632612745, guid: 236fd8efc21e74dd799a15ae3aa8d0dd, type: 3}
+  m_PrefabInstance: {fileID: 3950575328551045169}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1975094324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1960,7 +1993,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5748417247143242168, guid: 0f7ffc6aa3acaed4aa7910e7cb4ae3a2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -47.020004
+      value: -47.020008
       objectReference: {fileID: 0}
     - target: {fileID: 5748417247410808870, guid: 0f7ffc6aa3acaed4aa7910e7cb4ae3a2, type: 3}
       propertyPath: m_Pivot.x
