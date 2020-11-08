@@ -10,6 +10,7 @@ public class Eatable : MonoBehaviour {
     public Vector3 GetSize => Vector3.one * (Size / 7); 
     private MeshRenderer _renderer;
     private EatScript _eatScript;
+    private static readonly int Eatable1 = Shader.PropertyToID("Eatable");
 
     private void Reset() {
         MyCollider = GetComponent<Collider>();
@@ -24,10 +25,10 @@ public class Eatable : MonoBehaviour {
     private void Update() {
         if (_eatScript.CanEat(this) && _renderer) {
             if (MyCollider.enabled) {
-                _renderer.material.SetFloat("Eatable", 1);
+                _renderer.material.SetFloat(Eatable1, 1);
             }
             else {
-                _renderer.material.SetFloat("Eatable", 0);
+                _renderer.material.SetFloat(Eatable1, 0);
             }
         }
     }
