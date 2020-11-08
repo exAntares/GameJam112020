@@ -185,6 +185,7 @@ namespace Ludiq.Generated.Aot
 	// UnityEngine.AudioSource.op_Equality
 	// UnityEngine.AudioSource.op_Implicit
 	// UnityEngine.AudioSource.op_Inequality
+	// UnityEngine.AudioSource.PlayOneShot
 	// UnityEngine.Avatar.op_Equality
 	// UnityEngine.Avatar.op_Implicit
 	// UnityEngine.Avatar.op_Inequality
@@ -411,6 +412,7 @@ namespace Ludiq.Generated.Aot
 	// UnityEngine.Networking.PlayerConnection.PlayerConnection.op_Equality
 	// UnityEngine.Networking.PlayerConnection.PlayerConnection.op_Implicit
 	// UnityEngine.Networking.PlayerConnection.PlayerConnection.op_Inequality
+	// UnityEngine.Object..ctor
 	// UnityEngine.Object.op_Equality
 	// UnityEngine.Object.op_Implicit
 	// UnityEngine.Object.op_Inequality
@@ -462,6 +464,7 @@ namespace Ludiq.Generated.Aot
 	// UnityEngine.Quaternion.op_Inequality
 	// UnityEngine.Quaternion.op_Multiply
 	// UnityEngine.Quaternion.op_Multiply
+	// UnityEngine.Random.Range
 	// UnityEngine.RaycastHit2D.op_Implicit
 	// UnityEngine.Rect.op_Equality
 	// UnityEngine.Rect.op_Inequality
@@ -2747,6 +2750,18 @@ namespace Ludiq.Generated.Aot
 			bool @operator = (arg0 != arg1);
 			global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool> optimized = new global::Ludiq.StaticFunctionInvoker<UnityEngine.Object, UnityEngine.Object, bool>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// UnityEngine.AudioSource.PlayOneShot
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_AudioSource_PlayOneShot()
+		{
+			global::UnityEngine.AudioSource target = default(global::UnityEngine.AudioSource);
+			global::UnityEngine.AudioClip arg0 = default(global::UnityEngine.AudioClip);
+			target.PlayOneShot(arg0);
+			global::Ludiq.InstanceActionInvoker<UnityEngine.AudioSource, UnityEngine.AudioClip> optimized = new global::Ludiq.InstanceActionInvoker<UnityEngine.AudioSource, UnityEngine.AudioClip>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(default(global::UnityEngine.AudioSource), arg0);
 			optimized.Invoke(default(object[]));
 		}
 		
@@ -5383,6 +5398,13 @@ namespace Ludiq.Generated.Aot
 			optimized.Invoke(default(object[]));
 		}
 		
+		// UnityEngine.Object..ctor
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Object_ctor()
+		{
+			new UnityEngine.Object();
+		}
+		
 		// UnityEngine.Object.op_Equality
 		[global::UnityEngine.Scripting.PreserveAttribute()]
 		public static void UnityEngine_Object_op_Equality()
@@ -5971,6 +5993,18 @@ namespace Ludiq.Generated.Aot
 			global::UnityEngine.Vector3 arg1 = default(global::UnityEngine.Vector3);
 			UnityEngine.Vector3 @operator = (arg0 * arg1);
 			global::Ludiq.StaticFunctionInvoker<UnityEngine.Quaternion, UnityEngine.Vector3, UnityEngine.Vector3> optimized = new global::Ludiq.StaticFunctionInvoker<UnityEngine.Quaternion, UnityEngine.Vector3, UnityEngine.Vector3>(default(global::System.Reflection.MethodInfo));
+			optimized.Invoke(null, arg0, arg1);
+			optimized.Invoke(default(object[]));
+		}
+		
+		// UnityEngine.Random.Range
+		[global::UnityEngine.Scripting.PreserveAttribute()]
+		public static void UnityEngine_Random_Range()
+		{
+			float arg0 = default(float);
+			float arg1 = default(float);
+			global::UnityEngine.Random.Range(arg0, arg1);
+			global::Ludiq.StaticFunctionInvoker<float, float, float> optimized = new global::Ludiq.StaticFunctionInvoker<float, float, float>(default(global::System.Reflection.MethodInfo));
 			optimized.Invoke(null, arg0, arg1);
 			optimized.Invoke(default(object[]));
 		}
