@@ -20908,7 +20908,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
     IsFrom: 0
-    TargetRotation: {x: 0, y: 360, z: 0}
+    TargetRotation: {x: 0, y: 720, z: 0}
 --- !u!114 &-2162091723562902704
 MonoBehaviour:
   m_ObjectHideFlags: 1
